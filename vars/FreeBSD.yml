@@ -1,2 +1,1 @@
-__zsh_db_dir: /var/db/zsh
-__zsh_conf_dir: /usr/local/etc/zsh
+__zsh_package: zsh

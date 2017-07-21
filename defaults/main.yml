@@ -1,8 +1,2 @@
-zsh_user: zsh
-zsh_group: zsh
-zsh_log_dir: /var/log/zsh
-zsh_db_dir: "{{ __zsh_db_dir }}"
-zsh_service: zsh
-zsh_conf_dir: "{{ __zsh_conf_dir }}"
-zsh_conf_file: "{{ __zsh_conf_dir }}/zsh.conf"
-zsh_flags: ""
+zsh_package: "{{ __zsh_package }}"
+zsh_additional_packages: []

@@ -2,4 +2,5 @@
   roles:
     - ansible-role-zsh
   vars:
-    zsh_config: ""
+    zsh_additional_packages:
+      - zsh-navigation-tools

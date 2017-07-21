@@ -1,6 +1,6 @@
 # ansible-role-zsh
 
-A brief description of the role goes here.
+Install `zsh`
 
 # Requirements
 
@@ -8,9 +8,16 @@ None
 
 # Role Variables
 
-| variable | description | default |
+| Variable | Description | Default |
 |----------|-------------|---------|
+| `zsh_package` | | `{{ __zsh_package }}` |
+| `zsh_additional_packages` | | `[]` |
 
+## FreeBSD
+
+| Variable | Default |
+|----------|---------|
+| `__zsh_package` | `zsh` |
 
 # Dependencies
 
@@ -19,6 +26,12 @@ None
 # Example Playbook
 
 ```yaml
+- hosts: localhost
+  roles:
+    - ansible-role-zsh
+  vars:
+    zsh_additional_package:
+      - zsh-navigation-tools
 ```
 
 # License

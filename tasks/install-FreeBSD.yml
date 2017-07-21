@@ -2,5 +2,11 @@
 
 - name: Install zsh
   pkgng:
-    name: zsh
+    name: "{{ zsh_package }}"
     state: present
+
+- name: Install zsh_additional_package
+  pkgng:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ zsh_additional_packages }}"
