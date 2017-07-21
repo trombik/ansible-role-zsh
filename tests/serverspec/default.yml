@@ -1,0 +1,5 @@
+- hosts: localhost
+  roles:
+    - ansible-role-zsh
+  vars:
+    zsh_config: ""

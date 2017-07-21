@@ -1,0 +1,6 @@
+---
+
+- name: Restart zsh
+  service:
+    name: zsh
+    state: restarted
