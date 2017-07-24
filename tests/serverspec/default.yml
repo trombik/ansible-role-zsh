@@ -2,5 +2,4 @@
   roles:
     - ansible-role-zsh
   vars:
-    zsh_additional_packages:
-      - zsh-navigation-tools
+    zsh_additional_packages: "{% if ansible_os_family == 'FreeBSD' %}[ 'zsh-navigation-tools' ]{% elif ansible_os_family == 'Debian' %}[ 'zsh-lovers' ]{% elif ansible_os_family == 'RedHat' %}[ 'zsh-html' ]{% else %}[]{% endif %}"
