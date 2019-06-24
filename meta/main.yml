@@ -1,29 +1,26 @@
 ---
 galaxy_info:
+  role_name: zsh
   author: Tomoyuki Sakurai
   description: Install zsh
   company: N/A
   license: BSD
   min_ansible_version: 2.0
   platforms:
-  - name: FreeBSD
-    versions:
-    - 10.3
-# XXX 11.1 is not supported by galaxy, see
-# https://github.com/ansible/galaxy-issues/issues/296
-#   - 11.1
-  - name: OpenBSD
-    versions:
-    - 6.0
-    - 6.1
-#   - 6.2
-  - name: Ubuntu
-    versions:
-    - trusty
-    - xenial
-  - name: EL
-    versions:
-    - 7
+    - name: FreeBSD
+      versions:
+        - 10.3
+    - name: OpenBSD
+      versions:
+        - 6.0
+        - 6.1
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+    - name: EL
+      versions:
+        - 7
 
   galaxy_tags:
     - zsh
