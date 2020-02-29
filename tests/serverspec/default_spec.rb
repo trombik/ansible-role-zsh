@@ -8,7 +8,7 @@ case os[:family]
 when "redhat"
   additional_packages = ["zsh-html"]
 when "ubuntu"
-  additional_packages = ["zsh-lovers"]
+  additional_packages = ["zsh-syntax-highlighting"]
 when "freebsd"
   additional_packages = ["zsh-navigation-tools"]
 end
