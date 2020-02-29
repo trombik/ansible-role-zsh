@@ -30,8 +30,14 @@ None
   roles:
     - ansible-role-zsh
   vars:
-    zsh_additional_package:
-      - zsh-navigation-tools
+    os_zsh_additional_packages:
+      OpenBSD: []
+      FreeBSD:
+        - zsh-navigation-tools
+      Debian:
+        - zsh-syntax-highlighting
+      RedHat: zsh-html
+    zsh_additional_packages: "{{ os_zsh_additional_packages }}"
 ```
 
 # License
