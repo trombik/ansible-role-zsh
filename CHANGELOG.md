@@ -1,3 +1,9 @@
+## Release 1.1.2
+
+* 651c6ed bugfix: QA
+* 9383e59 bugfix: replace zsh_additional_packages for Ubuntu
+* 827c7f0 bugfix: QA
+
 ## Release 1.1.1
 
 * 8a762b3 [bugfix] Update rubocop to the latest (#1)
