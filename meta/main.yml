@@ -9,19 +9,19 @@ galaxy_info:
   platforms:
     - name: FreeBSD
       versions:
-        - 10.3
+        - 11.3
+        - 12.0
     - name: OpenBSD
       versions:
-        - 6.0
-        - 6.1
+        - 6.5
+        - 6.6
     - name: Ubuntu
       versions:
-        - trusty
-        - xenial
+        - bionic
     - name: EL
       versions:
         - 7
 
   galaxy_tags:
     - zsh
-dependencies:
+dependencies: []
